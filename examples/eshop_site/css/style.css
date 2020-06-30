@@ -32,10 +32,7 @@ a:hover {
     display: inline-flexbox;
 }
 
-/* Bootstrap */
-.mb-4 {
-    margin-bottom: 0.8rem !important;
-}
+
 
 /* Carousel */
 #carouselExampleIndicators {

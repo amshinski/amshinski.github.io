@@ -4,47 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Tobacco Imperium</title>
+    <title>Empire of Smoking</title>
     <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom shadow-sm">
-        <a class="navbar-brand" href="/index.html">Tobacco Imperium</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom shadow-sm sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="/">Empire of Smoking</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Каталог
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Кальяны</a>
-                    <a class="dropdown-item" href="#">Табак</a>
-                    <a class="dropdown-item" href="#">Шрек</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Прыкол</a>
+                        <a class="dropdown-item" href="#">Кальяны</a>
+                        <a class="dropdown-item" href="#">Табак</a>
+                        <a class="dropdown-item" href="#">Шрек</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Прыкол</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Акции</a>
+                    <a class="nav-link" href="#">Акции</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Доставка</a>
+                    <a class="nav-link" href="#">Доставка</a>
                 </li>
             </ul>
+            
         </div>
+        <!-- Cart -->
+        <a href="">
+            <button type="button" class="btn btn-outline-dark" id="cart">
+                <div class="gg-shopping-cart"></div>
+            </button>
+        </a>
     </nav>
     
-    <!-- Cart -->
-    <button type="button" class="btn btn-outline-dark" id="cart">
-        <div class="gg-shopping-cart"></div>
-    </button>
-
     <!-- Carousel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -81,7 +83,7 @@
     </nav>
     
 
-    <div class="row row-cols-1 row-cols-md-3" id="categoryCards">
+    <div class="row row-cols-2 row-cols-md-3" id="categoryCards">
         <a href="">
             <div class="col mb-4">
             <div class="card">
@@ -151,13 +153,15 @@
         </ol>
     </nav>
     
-    <div class="row row-cols-1 row-cols-md-3" id="newStuff">
+    <div class="row row-cols-2 row-cols-md-3" id="newStuff">
         <div class="col mb-4">
             <div class="card h-100">
-                <img src="images/gradient1.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-align-left">
-                <h7 class="card-title">Диффузор нержавейка</h7>
-                </div>
+                <a href="" class="product-card-a" data-toggle="modal" data-target="#exampleModal">
+                    <img src="images/gradient1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body card-align-left" id="cardBodyHeight">
+                        <h7 class="card-title">Диффузор нержавейка</h7>
+                    </div>
+                </a>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">199 руб.</li>
                 </ul>
@@ -168,10 +172,12 @@
         </div>
         <div class="col mb-4">
             <div class="card h-100">
-                <img src="images/gradient2.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-align-left">
-                <h7 class="card-title">Щипцы фигурные черные</h7>
-                </div>
+                <a href="" class="product-card-a">
+                    <img src="images/gradient2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body card-align-left" id="cardBodyHeight">
+                        <h7 class="card-title">Щипцы фигурные черные</h7>
+                    </div>
+                </a>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">399 руб.</li>
                 </ul>
@@ -182,10 +188,12 @@
         </div>
         <div class="col mb-4">
             <div class="card h-100">
-                <img src="images/gradient1.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-align-left">
-                <h7 class="card-title">Wto Бергамот 20гр</h7>
-                </div>
+                <a href="" class="product-card-a">
+                    <img src="images/gradient1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body card-align-left" id="cardBodyHeight">
+                        <h7 class="card-title">Wto Бергамот 20гр</h7>
+                    </div>
+                </a>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">149 руб.</li>
                 </ul>
@@ -196,10 +204,12 @@
         </div>
         <div class="col mb-4">
             <div class="card h-100">
-                <img src="images/gradient3.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-align-left">
-                <h7 class="card-title">Кальян Nube Junior Белый</h7>
-                </div>
+                <a href="" class="product-card-a">
+                    <img src="images/gradient3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body card-align-left" id="cardBodyHeight">
+                        <h7 class="card-title">Кальян Nube Junior Белый</h7>
+                    </div>
+                </a>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">2999 руб.</li>
                 </ul>
@@ -210,10 +220,12 @@
         </div>
         <div class="col mb-4">
             <div class="card h-100">
-                <img src="images/gradient1.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-align-left">
-                <h7 class="card-title">Калауд Lotus New</h7>
-                </div>
+                <a href="" class="product-card-a">
+                    <img src="images/gradient1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body card-align-left" id="cardBodyHeight">
+                        <h7 class="card-title">Калауд Lotus New</h7>
+                    </div>
+                </a>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">499 руб.</li>
                 </ul>
@@ -224,10 +236,12 @@
         </div>
         <div class="col mb-4">
             <div class="card h-100">
-                <img src="images/gradient3.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-align-left">
-                <h7 class="card-title">Мундштук Индивидульный</h7>
-                </div>
+                <a href="" class="product-card-a">
+                    <img src="images/gradient3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body card-align-left" id="cardBodyHeight">
+                        <h7 class="card-title">Мундштук Индивидульный Black and White Deluxe Edition</h7>
+                    </div>
+                </a>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">49 руб.</li>
                 </ul>
@@ -273,7 +287,7 @@
 
         <div class="footer-bottom">
             <h7>
-                © 2020 Tobacco Imperium
+                © 2020 Empire of Smoking
             </h7>
         </div>
 
@@ -281,7 +295,8 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script src="bootstrap-4.5.0-dist/js/bootstrap.js"></script>
 </body>
 
 </html>

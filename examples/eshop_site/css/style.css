@@ -4,18 +4,18 @@ body {
 }
 
 #carouselExampleIndicators, .container, .breadcrumb, #categoryCards, #newStuff {
-    margin: 0 20%;
+    margin: 0 16%;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    #carouselExampleIndicators, .breadcrumb, #categoryCards, #newStuff, footer {
+        margin: 0 8%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
     #carouselExampleIndicators, .breadcrumb, #categoryCards, #newStuff, footer {
-        margin: 0 0;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    #carouselExampleIndicators, .breadcrumb, #categoryCards, #newStuff, footer {
-        margin: 0 12%;
+        margin: 0 1%;
     }
 }
 
@@ -69,12 +69,26 @@ a:hover {
 }
 
 a .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
+    color: black;
+}
+
+#cardBodyHeight {
+    height: 4.5rem;
+}
+
+.product-card-a {
+    color: rgb(70, 70, 70);
+}
+
+.product-card-a:hover {
+    color: black;
 }
 
 /* Price */
 .list-group-item {
     font-size: 0.8rem;
+    color: rgb(70, 70, 70);
 }
 
 .card-align-left {
@@ -104,13 +118,6 @@ footer {
 }
 
 /* Cart */
-#cart {
-    position: fixed;
-    top: 0.65rem;
-    right: 5.4rem;
-    background-color: white;
-}
-
 #cart:hover {
     background-color: black;
 }
